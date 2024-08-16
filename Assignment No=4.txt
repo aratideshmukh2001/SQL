@@ -1,0 +1,18 @@
+Q.1
+desc employees;
+Q.2
+select unique salary from employees;
+Q.3
+select unique last_name from employees;
+Q.4
+select * from employees where department_id=90;
+Q.5
+select * from employees where salary>5000 and job_id='ST_MAN';
+Q.6
+select *from employees where hire_date between '01/06/2003' and '1/06/2006';
+Q.7
+select * from employees where JOB_ID='SA_MAN' or JOB_ID='SA_REP'or JOB_ID='IT_PROG';
+Q.8
+SELECT *from employees where department_id not in(90,60,50);
+Q.9
+SELECT * from departments ORDER BY department_name DESC;

@@ -1,0 +1,21 @@
+Q.1
+SELECT COUNT(distinct job_id) FROM employees;
+Q.2
+SELECT SUM(salary)FROM employees;
+Q.3
+select avg(salary),count(*)from employees where department_id=90;
+Q.4
+select max(salary),min(salary),sum(salary),avg(salary)from employees;
+Q.5
+select max(salary)- min(salary)as difference from employees;
+Q.6
+select manager_id, min(salary) from employees
+where manager_id is not null GROUP BY manager_id ORDER BY MIN(salary) DESC;
+Q.7
+select job_id,avg(salary)FROM EMPLOYEES where job_id<>'IT PROG' group by job_id;
+Q.8
+select job_id,sum(salary),max(salary),min(salary),avg(salary)from employees where department_id=90 group by job_id;
+Q.9
+select avg(salary)from employees where department_id>10;
+Q.10
+select count(*),department_id from employees group by department_id;

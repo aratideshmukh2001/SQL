@@ -1,0 +1,44 @@
+Q.1
+select street_address||' '||postal_code||' '||city from locations;
+Q.2
+select first_name||''||last_name||'  has a department id is'||department_id from employees;
+Q.3
+select 'my name is '||first_name||' and i am from '||job_id|| ' department ' as full_information from employees where employee_id=100;
+Q.4
+desc departments;
+select *from departments;
+Q.5
+select job_title||' salary is '||max_salary from jobs;
+Q.6
+select location_id||','||street_address||','||postal_code||','||city as full_address from locations;
+Q.7
+select distinct job_id from employees;
+Q.8
+select ' department id of '||first_name||' is '||  department_id as statement from employees where department_id in(60,110,80,90);
+Q.9
+update employees set salary=salary+5000 where employee_id in(170,175,180);
+Q.10
+select first_name||' '||last_name|| ' is working in '||job_id ||' with '||employee_id from employees;
+Q.11
+select *from employees where job_id in('PU_CLERK','ST_CLERK','SH_CLERK')and salary between 5000 and 15000;
+Q.12
+select first_name||' '||last_name as fullname from employees where department_id<>80;
+Q.13
+update employees set salary=salary-3000 where employee_id in (201,204,205);
+Q.14
+select *from employees where salary>=1000 and job_id like'___CLERK%';
+Q.15
+select (employee_id||' '||first_name||' '||last_name)as info from employees where commission_pct is null;
+Q.16
+select first_name||' '||last_name||' '||job_id||' '||salary*12  as info_annual_salary from employees where job_id in ('IT_PROG','SA_REP') and salary between 2000 and 15000;
+Q.17
+select first_name ||' '|| last_name as fullname from employees where email like'J%' order by email desc;
+Q.18
+select first_name||' '||last_name as name from employees where extract (month from hire_date)=3 and job_id in ('SA_REP') and manager_id in(146,147,148);
+Q.19
+select 'Myself ' || first_name ||' '|| last_name ||', I hired on '|| hire_date from employees;
+Q.20
+select * from employees where manager_id>103 and phone_number like '%6';
+Q.21
+select first_name,last_name from employees where first_name='John' or first_name='Alexander';
+

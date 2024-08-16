@@ -1,0 +1,26 @@
+1.select upper(first_name)from employees;
+2.select initcap(last_name)from employees;
+3.select lower(job_id)from employees;
+4.select substr(first_name,1,3)from employees;
+5.select instr(first_name,'a')first_name from employees;
+6.select distinct length(commission_pct)from employees;
+7.select *from employees order by first_name ASC,department_id desc;
+8.select trim(leading'w' from 'www.3ritech.com') from dual;
+9.select 'www.3ritech.com', rtrim ( 'www.3ritech.com', '.com' ) from dual 
+10.select first_name,lpad(first_name,length(first_name)+5,'@') from employees;
+11.select first_name,rpad(first_name,length(first_name)+5,'@') from employees;
+12.select lpad('sqltutorials',13,'-') from dual;
+13.select rpad('sqltutorials',13,'$') from dual;
+14.select first_name,lpad(rpad(first_name,length(first_name)+3,'&'),
+15.length(first_name)+3+3,'&')from employees;
+16.select replace ('sqltutorials','s','$')from dual;
+17.select replace (first_name,'a','@')from employees;
+18.select reverse(last_name)from employees;
+19.select round(2345.67895643)from dual;
+20.select trunc(234567895643)from dual;
+21.select mod(56,3)from dual;
+22.select reverse('programming language')from dual;
+23.select lpad('sql',6,'&') from dual;
+24.select lpad(rpad('sql',length('sql')+3,'#'),length('sql')+3+3,'#')
+from dual;
+25.select '###$$$sqlprograming$$$$#### ',ltrim('###$$$sqlprograming$$$$#### ','###$$$') from dual;

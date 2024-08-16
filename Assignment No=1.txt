@@ -1,0 +1,36 @@
+--Assignment No=1
+Q.1
+create table customer(customer_name char(20),customer_street char(30),customer_city char(30));
+Q.2
+alter table customer add (phone_number number(10),country char(20));
+Q.3
+alter table customer rename Column phone_number to mobile;
+Q.4
+create table branch(branch_name char(20),branch_city char(30));
+Q.5
+alter table branch modify(branch_name varchar(20));
+Q.6
+insert into customer values('Yash','shivaji chawk','nashik',9876754567,'India');
+insert into customer values('Rugved','FC road','pune',9867754566,'India');
+insert into customer values('John','cavill avenue','queensland',9859675487,'Australia');
+
+Q.7
+create table cust_info as select *from customer where 1=2;
+select *from cust_info;
+Q.8
+truncate table cust_info;
+Q.9
+desc customer;
+desc branch;
+Q.10
+insert into cust_info(customer_name,customer_street,customer_city ,mobile ,country)
+select customer_name,customer_street,customer_city ,mobile ,country from customer;
+select *from cust_info;
+Q.11
+insert into branch values('computer science','dhule');
+insert into branch values('IT','sangali');
+insert into branch values('civil','satara');
+insert into branch values('electrical','dhule');
+insert into branch values('mechanical','pune');
+Q.12
+alter table branch rename to branch_info;

@@ -1,0 +1,26 @@
+Q.1
+create table employ_details(id int,name varchar(30),age number(3),address varchar(20),salary float);
+Q.2
+insert into employ_details values(1,'Ramesh',32,'Ahmedabad',2000.00);
+insert into employ_details values(2,'Khilan',25,'Delhi',1500.00);
+insert into employ_details values(3,'Kaushik',23,'Kota',2000.00);
+insert into employ_details values(4,'Chaitali',32,'Mumbai',6500.00);
+insert into employ_details values(5,'Hardik',27,'Bhopal',8500.00);
+insert into employ_details values(6,'Komal',32,'MP',4500.00);
+insert into employ_details values(7,'Muffy',24,'Indore',10000.00);
+Q.3
+select *from employ_details;
+Q.4
+update employ_details set salary=10000,age=28 where id=6;
+Q.5
+delete employ_details where name='Hardik';
+Q.6
+update employ_details set address='pune' where address='Mumbai' or address='MP';
+Q.7
+update employ_details set salary = salary+1000 where id=4;
+Q.8
+select name,age,salary from employ_details;
+Q.9
+select name||' '||age||'  '||address as full_information from employ_details;
+Q.10
+select name||'  '||salary as salary_is from employ_details; 
